@@ -76,9 +76,9 @@ Ruby on Rails
       passenger_enabled on;
       }
 
-* [nginx init script](git@github.com:tobyhede/rails-nginx-passenger-ubuntu.git)
+* [nginx init script](https://github.com/tobyhede/rails-nginx-passenger-ubuntu/raw/master/nginx/nginxt)
 
-      git clone git://github.com/jnstq/rails-nginx-passenger-ubuntu.git
+      git clone git://github.com/tobyhede/rails-nginx-passenger-ubuntu.git
       sudo mv rails-nginx-passenger-ubuntu/nginx/nginx /etc/init.d/nginx
       sudo chown root:root /etc/init.d/nginx
     
