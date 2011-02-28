@@ -1,6 +1,8 @@
 AMI
 ------------
-Ubuntu-32-10.10: http://aws.amazon.com/amis/4349
+
+* [Ubuntu-32-10.10](http://aws.amazon.com/amis/4349)
+* [Ubuntu-64-10.10](http://aws.amazon.com/amis/4350)
 
 
 Basics
