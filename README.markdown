@@ -31,6 +31,13 @@ Basics
 
 * [iptables](https://gist.github.com/3365ce0aa5b1bcd694a0)
 
+       sudo nano /etc/iptables.up.rules
+       sudo /sbin/iptables-restore < /etc/iptables.up.rules
+       sudo nano /etc/network/if-pre-up.d/iptables
+        #!/bin/sh
+        /sbin/iptables-restore < /etc/iptables.up.rules        
+     
+
 
 
 Ruby on Rails
