@@ -66,14 +66,21 @@ Ruby on Rails
 ### Install & Configure nginx
 
 * gem install passenger
-* rvmsudo passenger-install-nginx-module
-* Add nginx config to /opt/nginx/conf/nginx.conf
+* download and untar the nginx src
+* rvmsudo passenger-install-nginx-module:
+
+      # select option 2
+      # give it the path to the nginx src
+      # add this option when prompted:
+     --with-http_gzip_static_module
+
+* Add [nginx config](https://gist.github.com/16e8143b5d0a849b58cb) to /opt/nginx/conf/nginx.conf
 
       server {
-      listen 80;
-      #server_name www.yourhost.com;
-      root /u/Glaive/current/public;                                       
-      passenger_enabled on;
+        listen 80;
+        #server_name www.yourhost.com;
+        root /u/Glaive/current/public;                                       
+        passenger_enabled on;
       }
 
 * [nginx init script](https://github.com/tobyhede/rails-nginx-passenger-ubuntu/raw/master/nginx/nginxt)
