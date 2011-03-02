@@ -93,6 +93,17 @@ Ruby on Rails
       sudo /etc/init.d/nginx status
       sudo /usr/sbin/update-rc.d -f nginx defaults
     
+
+Analysis
+------------
+
+* mpstat 
+
+      sudo apt-get install sysstat
+      sudo mpstat
+
+
+
 References
 -----------
 [Maverick Ubuntu Setup](http://articles.slicehost.com/2010/10/18/ubuntu-maverick-setup-part-1)
